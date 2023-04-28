@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prolians</title>
+
+  <!-- Change these Google fonts with your own choice -->
+  <link href="https://fonts.googleapis.com/css?
+  family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="banner">
+		<img src="data:image/png;base64,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">
+	</div>
+
+  <!-- Banner section -->
+  <div class="card">
+  <h1>Le partenaire des métiers de la construction</h1>
+  <h3>L’enseigne PROLIANS accompagne quotidiennement des professionnels issus de plus de 200 métiers : métalliers, serruriers, entreprises générales du bâtiment, menuisiers, plombiers, collectivités et services publics, maçons, charpentiers, industries, professionnels des travaux publics mais aussi les entreprises du secteur tertiaire.
+
+Ses 450 000 clients peuvent compter sur l’offre de fournitures la plus complète du marché, adossée à de nombreux services.
+</div>
+<div class="card">
+   <h2>Les produits du mois</h2>
+<p>La gamme du mois d'Avril</p>
+<div class="text-center">
+	<img src="https://www.prolians.fr/media/catalog/events/slider-desktop-prolians-produits-du-mois-avril.jpg" alt="Paris">
+</div>
+
+</div>
+<div class="card">
+  <h2>Catalogues et publications</h2>
+  <h3> Le secteur du bâtiment connaît des évolutions majeures : nouvelles normes techniques, juridiques et environnementales, montée en puissance des objets connectés et du bâtiment intelligent…
+
+En tant que distributeur au service des professionnels, nous nous engageons à vos côtés en vous transmettant notre expertise technique et en vous proposant des solutions innovantes pour votre performance professionnelle.
+
+Notre expertise nous positionne comme l’interlocuteur privilégié de l’ensemble du secteur : métalliers, plombiers, entreprises générales de bâtiment, menuisiers et charpentiers, administrations et collectivités...</h2>
+</div>
+<div class="cards">
+<div class="text-center">
+	  <img src="https://media.descours-cabaud.net/magento2/prolians/couv/catalogue-prolians-2023.jpg">
+</div>
+
+<div class="text-center">
+	  <img src="https://media.descours-cabaud.net/magento2/prolians/operation-fixation.jpg">
+</div>
+
+<div class="text-center">
+	  <img src="https://media.descours-cabaud.net/magento2/prolians/couv/selection-epi-opsial.jpg">
+</div>
+</div>
+
+
+  <!-- Cards section -->
+  <div class="card">
+<h2>Découvrer nos magasins</h2>
+Retrouvez nos 300 magasins PROLIANS en France
+Notre expertise s’appuie sur des compétences très complémentaires :
+
+Celle de nos Directeurs de Marchés, qui suivent et analysent l’évolution de vos métiers.
+Celle de nos Chefs de Produits, qui sélectionnent les meilleurs produits et assurent la négociation avec nos fabricants partenaires.
+Enfin celle de toutes nos forces commerciales, qui sont régulièrement formées aux produits et à leurs fonctionnalités.
+<div class="text-center">
+
+<img src="https://media.descours-cabaud.net/magento2/prolians/flyer/univers-magasin-prolians-fournitures-construction-professionnels-2.jpg">
+</div>
+
+</div>
+<div class="card">
+<h2>Qui somme nous ?</h2>
+<h3>Professionnels des métiers du bâtiment et de l'industrie, vous recherchez des Equipements de Protection Individuelle alliant technicité, confort et style ?
+
+A vos côtés depuis plus de 20 ans, OPSIAL vous propose une offre complète d’EPI adaptée à tous vos besoins.
+Sur vos chantiers, dans vos ateliers, vous évoluez dans un environnement exigeant et en perpétuelle évolution. Pour répondre aux défis du quotidien, vous avez besoin d’équipements et de solutions sur lesquels vous pouvez compter pour assurer votre sécurité. 
+Découvrez une gamme complète d’EPI pour vous protéger de la tête aux pieds !</h3>
+<p>Notre ambition, défendre et accompagner vos savoir-faire</p>
+<div class="text-center">
+<img src="https://media.descours-cabaud.net/magento2/prolians/flyer/chantier-batiment-construction.jpg">
+</div>
+
+</div>
+<div class="card">
+<h2> PROLIANS en France et en Europe !</h2>
+<div class="text-center">
+<img src="https://media.descours-cabaud.net/magento2/prolians/flyer/carte-prolians-europe.png">
+</div>
+</div>
+  <!-- Footer section -->
+  <footer>
+ 
+  </footer>
+
+</body>
+</html>
